@@ -2,15 +2,36 @@
 * { 
   box-sizing: border-box;
 }
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	color: #D2E2D3;
+
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	font-size:36px;
+}
   
 body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f7f5f0;
+  font-family: Lucida, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+  color: #D0C3C4;
+  background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
 }
+}
+
+
 /* Link Styles */
 
 a {
@@ -25,7 +46,11 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: black;
+   background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow); /* Standard syntax */
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -57,49 +82,71 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/phila.png') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
+
+
 }
+
+.contact-bg{
+	 background: url('images/contact-bg.jpg') no-repeat top center ;
+	  background-size: cover;
+}
+
+.experience-bg{
+	 background: url('images/experience-bg.jpg') no-repeat top center ;
+	  background-size: cover;
+}
+
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  margin-top: 25px;
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  border-right: 8px solid white;
+  border-bottom: 30px solid yellow;
+  border-left:5px solid red;
+  box-shadow: 10px 10px black;
   transition: all .5s;
+
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(.1) rotate(360deg);
+
 }
 .tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
+  color: #fff;
+  padding: 0px;
+  text-shadow: 0px 0px 5px #000;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: #222;
-  color: yellow;
+  color: #fff; 
+  text-shadow: 0px 0px 5px #000;
 }
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  background: #495F5D;
+  border-bottom: 4px solid #FF8100;
+  border-left:4px solid #BDDA05;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-bottom: 8px solid #000;
+  border-left:8px solid #333;
+}
+
+.card img{
+max-width:100%;
 }
 
 ul.skills {
@@ -198,7 +245,7 @@ a.social:hover {
   }
 
   footer {
-    font-size: 1.3em;
+    font-size: 1em;
     max-width: 1200px;
     margin: 40px auto;
   }
